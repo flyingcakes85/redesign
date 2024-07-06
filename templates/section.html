@@ -1,13 +1,25 @@
 {% extends "base.html" %}
 
+{% block head %}
+<link rel="stylesheet" href="/section.css" />
+{% endblock %}
+
 {% block content %}
-<h1 class="title">
+<h1 class="title archivo-black-regular">
   {{ section.title }}
 </h1>
-<ul>
-  <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
+
+<hr>
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  <div class="card">
+    <div class="banner">
+  <img src="{{ page.extra.banner_url | safe }}" class="blog-banner"></div>
+  <div class="info">
+  <a href="{{ page.permalink | safe }}" class="blog-title inria-serif-bold-italic">{{ page.title }}</a>
+<p>{{ page.description }}</p>
+
+
+</div></div><hr class="blog-sep">
   {% endfor %}
 </ul>
 {% endblock content %}
