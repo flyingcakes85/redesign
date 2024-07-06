@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block head %}
+<link rel="stylesheet" href="/home.css" />
+{% endblock %} {% block content %}
+
+<div class="row">
+  <div class="column" style="display: flex; flex-direction:column;">
+    <p id="home-label" class="inria-serif-bold-italic">flyingcakes</p>
+
+    <p id="home-tagline" class="press-start-2p-regular">
+      EX TOWER RESEARCH CAPITAL INTERN * ENDEAVOUR OS TEAM MEMBER * KDE
+      CONTRIBUTOR * PROGRAMMER DVORAK * 80s CITY POP ADDICT * GSoC'22 * SoK'22 *
+    </p>
+    <div class="row archivo-black-regular home-action-ribbon">
+      
+      <div class="home-action-blog br-b br-r" > READ BLOGS</div>
+
+      <div class="home-action-chicklet br-b">GITHUB</div>
+      <div class="home-action-chicklet br-r">EMAIL</div>
+      <div class="home-action-chicklet br-r">GITHUB</div>
+      <div class="home-action-chicklet">EMAIL</div>
+    </div>
+  </div>
+  <div class="column" style="background-color: #000; border-left: 0px;">
+    <div id="cover-image">
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
