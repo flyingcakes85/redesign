@@ -8,6 +8,10 @@ build_search_index = false
 
 minify_html = true
 
+taxonomies = [
+    { name = "tags", feed = true }
+]
+
 [markdown]
 highlight_code = true
 
