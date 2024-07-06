@@ -47,6 +47,9 @@ body {
 .home-action-ribbon {
   border-top: 4px solid black;
   margin-top: auto;
+  > a {
+    color: black;
+  }
 }
 
 .home-action-chicklet {

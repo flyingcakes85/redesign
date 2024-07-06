@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="/bulma.css"> -->
-     <link rel="stylesheet" href="base.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?{% for font in config.extra.font_include %}family={{ font }}&{% endfor %}display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css" />
+    <script
+      src="https://kit.fontawesome.com/fc5cbf0863.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?{% for font in config.extra.font_include %}family={{ font }}&{% endfor %}display=swap"
+      rel="stylesheet"
+    />
     {% block head %} {% endblock %}
     <title>Document</title>
   </head>
   <body>
     <section class="section">
-    <div class="container">
-      {% block content %} {% endblock %}
-    </div>
-  </section>
+      <div class="container">{% block content %} {% endblock %}</div>
+    </section>
   </body>
 </html>
