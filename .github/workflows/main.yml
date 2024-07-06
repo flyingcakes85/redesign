@@ -1,0 +1,38 @@
+name: Build website
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-12
+    if: github.ref == 'refs/heads/main'
+    env:
+      TARGET_BRANCH: gh-pages
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+    - name: Install zola
+      run: brew install zola
+    - name: Generate HTML
+      run: zola build
+    - name: Commit and push to target branch
+      run: |-
+        git config --global user.email "workflow-bot@example.com"
+        git config --global user.name "workflow-bot"
+        git checkout --orphan $TARGET_BRANCH
+        git rm --cached -r .
+        mv public ..
+        rm -rf *
+        rm -rf .github .gitignore
+        mv ../public/* .
+        touch .nojekyll
+        echo 'redesign.snehit.dev' > CNAME
+        git add .
+        git commit -m "generated using zola build"
+        git push --set-upstream origin $TARGET_BRANCH --force
