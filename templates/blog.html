@@ -1,9 +1,26 @@
 {% extends "base.html" %}
 
+{% block head %}
+<link rel="stylesheet" href="/blog.css" />
+{% endblock %}
+
 {% block content %}
-<h1 class="title">
+
+<div class="post-header" id="header22543">
+<h1 class="title archivo-black-regular">
   {{ page.title }}
 </h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-{{ page.content | safe }}
+
+
+<p class="subtitle"><strong> <i class="fa-solid fa-calendar"></i> {{ page.date }}</strong></p>
+</div>
+<hr class="theme">
+<div class="post-content nunito-sans-regular">
+{{ page.content | safe }}</div>
+
 {% endblock content %}
+
+{% block post_body_script %}
+let header = document.getElementById("header22543");
+header.style.backgroundImage = "url('{{ page.extra.cover_url | safe }}')";
+{% endblock %}
