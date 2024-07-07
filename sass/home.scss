@@ -205,6 +205,7 @@ td.inverted-cell {
 .blog-container {
   padding-top: 12px;
   padding-bottom: 12px;
+  transition: all 0.1s ease-in;
 }
 
 .blog-container:hover {
@@ -212,7 +213,6 @@ td.inverted-cell {
   transform: rotate(2deg);
   padding: 16px;
   background-color: colors.$bg-light;
-  // background-color: yellow;
   color: rgba(0, 0, 0, 1);
   -webkit-box-shadow: 5px 5px 0px 0px blue;
   -moz-box-shadow: 5px 5px 0px 0px blue;
