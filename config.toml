@@ -8,9 +8,7 @@ build_search_index = false
 
 minify_html = true
 
-taxonomies = [
-    { name = "tags", feed = true }
-]
+taxonomies = [{ name = "tags", feed = true }]
 
 [markdown]
 highlight_code = true
@@ -22,5 +20,8 @@ font_include = [
     "Press+Start+2P&",
     "Archivo+Black",
     "Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000",
-    "Syne:wght@700"
+    "Syne:wght@700",
+    "DM+Serif+Text:ital@0;1",
+    "Bebas+Neue",
+    "Work+Sans:ital@0;1",
 ]

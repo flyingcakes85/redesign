@@ -57,22 +57,32 @@ body {
 
 .home-action-blog:hover {
   background-color: yellow;
+  transition: all 0.08s ease-in;
+  transform: rotate(1deg) scale(1.08);
+  border-left: 4px solid black;
 }
 
 .home-action-chicklet:hover {
   background-color: yellow;
+  transition: all 0.08s ease-in;
+  background-color: yellow;
+  transform: rotate(1deg) scale(1.08);
+  border-left: 4px solid black;
+  border-right: 4px solid black;
 }
 
 .home-action-chicklet {
   float: left;
   width: 33.33%;
   padding: 24px;
+  transition: all 0.008s ease-in;
 }
 
 .home-action-blog {
   float: left;
   width: 66.66%;
   padding: 24px;
+  transition: all 0.08s ease-in;
 }
 
 #cover-image {
@@ -83,6 +93,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+  color: colors.$bg-light;
+  padding: 24px;
 }
 
 .br-b {
@@ -126,4 +138,97 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
+}
+
+.quote {
+  // margin: 24px;
+  padding: 36px;
+  font-size: 1.5em;
+}
+
+.the-quote {
+  text-align: center;
+}
+
+.quote-icon {
+  font-size: 46px;
+  opacity: 0.5;
+}
+
+#law {
+  font-size: 2em;
+  padding: 6px;
+}
+
+#feature {
+  border-collapse: collapse;
+}
+
+td.feature-cell {
+  border: 1px solid colors.$bg-light;
+  font-size: larger;
+  padding: 4px;
+  text-align: center;
+}
+
+td.inverted-cell {
+  color: rgba(0, 0, 0, 1);
+  background-color: colors.$bg-light;
+}
+
+.xmark {
+  text-align: right;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.law-table {
+  border: 1px solid colors.$bg-light;
+  border-collapse: collapse;
+}
+
+.not-you {
+  text-align: center;
+  background: colors.$bg-light;
+  color: rgba(0, 0, 0, 1);
+}
+
+.about-section {
+  // transform: rotate(-4deg);
+  padding-left: 18px;
+  // width: 400px;
+  font-size: 4em;
+}
+
+.blog-container {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.blog-container:hover {
+  transition: all 0.1s ease-in;
+  transform: rotate(2deg);
+  padding: 16px;
+  background-color: colors.$bg-light;
+  // background-color: yellow;
+  color: rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 5px 5px 0px 0px blue;
+  -moz-box-shadow: 5px 5px 0px 0px blue;
+  box-shadow: 5px 5px 0px 0px blue;
+}
+
+.latest-posts {
+  font-size: 7em;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.blog-title {
+  font-size: 2em;
+}
+
+.blog-desc {
+  font-size: 1.2em;
 }
