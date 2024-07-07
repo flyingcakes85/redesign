@@ -4,6 +4,11 @@
   font-style: italic;
 }
 
+.inria-serif-bold {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+}
+
 .press-start-2p-regular {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -24,7 +29,14 @@
   font-optical-sizing: auto;
   // font-weight: <weight>;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+
+.syne-bold {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }

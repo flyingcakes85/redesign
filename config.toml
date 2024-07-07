@@ -18,7 +18,9 @@ highlight_code = true
 [extra]
 
 font_include = [
-    "Inria+Serif:ital,wght@1,700",
+    "Inria+Serif:ital,wght@0,400;1,700",
     "Press+Start+2P&",
     "Archivo+Black",
+    "Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000",
+    "Syne:wght@700"
 ]
