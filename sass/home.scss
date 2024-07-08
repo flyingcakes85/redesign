@@ -58,8 +58,12 @@ body {
   max-width: max(25vw, 700px);
   margin-left: 24px;
   user-select: none;
-
   margin-right: 24px;
+}
+
+#home-tagline:hover {
+// color: rgba(255, 255, 255, 1);
+color: rgba(0, 0, 0, 0.08);
 }
 
 .home-action-ribbon {
@@ -177,6 +181,7 @@ body {
 
 #feature {
   margin-left: 32px;
+  margin-top: 24px;
   border-collapse: collapse;
   filter: blur(20px);
   transition: all 0.15s ease-out;
@@ -297,4 +302,8 @@ td.inverted-cell:hover {
   -webkit-animation: spin 4s linear infinite;
   -moz-animation: spin 4s linear infinite;
   animation: spin 2s linear infinite;
+}
+
+.glow:hover{
+color: red;
 }
