@@ -176,19 +176,46 @@ body {
 }
 
 #feature {
+  margin-left: 32px;
   border-collapse: collapse;
+  filter: blur(20px);
+  transition: all 0.15s ease-out;
+  width: 200px;
+  background-color: red;
+  color: red;
+}
+
+#feature:hover {
+  filter: blur(0px);
+  background-color: white;
+  color: black;
+
+  transition: all 0.15s ease-out;
+}
+
+.pg-row:hover + tr {
+  > td {
+    background-color: black;
+  }
+  transition: all 0.15s ease-out;
 }
 
 td.feature-cell {
-  border: 1px solid colors.$bg-light;
+  border: 2px solid black;
   font-size: larger;
   padding: 4px;
   text-align: center;
 }
 
 td.inverted-cell {
-  color: rgba(0, 0, 0, 1);
-  background-color: colors.$bg-light;
+  color: colors.$bg-light;
+  background-color: blue;
+  transition: all 0.15s ease-out;
+}
+
+td.inverted-cell:hover {
+  background-color: black;
+  transition: all 0.15s ease-out;
 }
 
 .xmark {
